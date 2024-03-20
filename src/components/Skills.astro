@@ -1,0 +1,62 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Fullstack developer</h2>
+		<p>Being a Fullstack developer entails possessing a versatile skill set that encompasses both front-end and back-end development. It requires proficiency in a variety of programming languages, frameworks, and technologies to build robust and dynamic web applications.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>IT engineer</h2>
+		<p>They play a crucial role in optimizing IT infrastructure, ensuring smooth operations, and enhancing efficiency within organizations. Moreover, IT engineers possess strong problem-solving skills and the ability to adapt to evolving technologies, making them invaluable assets in today's digital landscape.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Passionate</h2>
+		<p>Being passionate as an IT professional goes beyond simply performing tasks; it involves a deep love for technology and a genuine desire to create impactful solutions. Passionate IT professionals are driven by curiosity and a thirst for knowledge, constantly seeking to expand their skills and stay up-to-date with the latest advancements in their field. They approach challenges with enthusiasm and creativity.</p>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>
